@@ -5,11 +5,11 @@ datasources:
   url: http://prometheus:9090
   isDefault: true
 - name: Alertmanager
-    type: alertmanager
-    url: http://localhost:9093
-    access: proxy
-    jsonData:
-      # Valid options for implementation include mimir, cortex and prometheus
-      implementation: prometheus
-      # Whether or not Grafana should send alert instances to this Alertmanager
-      handleGrafanaManagedAlerts: false
+  type: alertmanager
+  url: http://localhost:9093
+  access: proxy
+  jsonData:
+    # Valid options for implementation include mimir, cortex and prometheus
+    implementation: prometheus
+    # Whether or not Grafana should send alert instances to this Alertmanager
+    handleGrafanaManagedAlerts: false
